@@ -54,7 +54,7 @@ export function PiracyDisclaimer() {
                     className="text-center z-20 space-y-4"
                 >
                     <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-white drop-shadow-2xl">
-                        We don't endorse piracy.
+                        Leave the high seas behind.
                     </h2>
                     <p className="text-zinc-400 text-lg md:text-xl max-w-xl mx-auto leading-relaxed">
                         Distribute is built for your owned library. Support the artists you love by purchasing their music.

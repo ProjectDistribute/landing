@@ -1,113 +1,135 @@
-# Distribute
+<div align="center">
+  <img src="github-assets/banner.png" alt="Distribute Banner" width="100%" />
 
-**Stop renting your music.**
+  <h1>Distribute (Web)</h1>
+  
+  <p>
+    <strong>The official landing page for the Distribute music app.</strong>.
+  </p>
 
-Distribute is an offline-first streaming music app that connects to your home server. It facilitates cross-syncing between servers to expand your library without relying on third-party cloud services. Designed with privacy and ownership in mind, Distribute allows you to truly own your music collection.
+  <p>
+    <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js" alt="Next.js"></a>
+    <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react" alt="React"></a>
+    <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?style=flat-square&logo=tailwind-css" alt="Tailwind CSS"></a>
+    <a href="https://www.framer.com/motion/"><img src="https://img.shields.io/badge/Motion-Framer-0055FF?style=flat-square&logo=framer" alt="Framer Motion"></a>
+  </p>
 
-![Distribute App Logo](public/app.png)
+  <p>
+    <a href="#-about-this-project">About This Project</a> •
+    <a href="#-about-distribute-the-product">Distribute App</a> •
+    <a href="#-getting-started">Getting Started</a> •
+    <a href="#%EF%B8%8F-tech-stack">Tech Stack</a>
+  </p>
+</div>
 
-## Features
+---
 
-- **Offline-First Architecture**: Your music is always available, even without an internet connection.
-- **Home Server Connectivity**: Seamlessly connect to your self-hosted music server.
-- **Library Synchronization**: Cross-sync multiple servers to unify and expand your music library.
-- **Privacy Focused**: We collect no user data. You own your data and your music.
-- **Premium Experience**: A slick, responsive user interface with buttery smooth animations and transitions.
+## 📖 About This Project
 
-## Tech Stack
+This repository contains the source code for the **public-facing marketing website** of Distribute.
 
-This project is built using the following modern web technologies:
+> [!IMPORTANT]
+> **This is NOT the Distribute music application.**
+> 
+> This repo houses the **landing page** only. The actual Distribute client and server application are developed and hosted in separate repositories. Links:
+> 
+> - [Distribute App](https://github.com/ProjectDistribute/app)
+> - [Distributor](https://github.com/ProjectDistribute/distributor)
 
-- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
-- **Library**: [React 19](https://react.dev/)
+## 🎵 About Distribute
+
+The landing page promotes **Distribute**, a next-generation, offline-first music streaming application designed for privacy-conscious audiophiles.
+
+| Product Feature | Description |
+| :--- | :--- |
+| **Self-Hosted Core** | Connect to your own home server. Your music, your rules. |
+| **Offline-First** | Local-first architecture ensures music plays without internet. |
+| **Library Sync** | Smart synchronization between multiple servers. |
+| **Privacy Focused** | Zero tracking. Absolute user privacy and data ownership. |
+
+## ⚡ Website Features (This Repository)
+
+This landing page project showcases modern web development techniques:
+
+*   **Interactive Physics**: Custom **Matter.js** implementation for the interactive vinyl section.
+*   **Scroll-Driven Animations**: Complex scroll reveals using **Framer Motion**.
+*   **Modern Stack**: Built on **Next.js 16** and **React 19** with Server Components.
+*   **Design System**: Styled with **Tailwind CSS 4** and **Shadcn UI**.
+
+## 🛠️ Tech Stack
+
+This website is built with the following technologies:
+
+- **Frontend Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **UI Library**: [React 19](https://react.dev/)
 - **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Physics Engine**: [Matter.js](https://brm.io/matter-js/) (for interactive vinyl animations)
+- **Physics**: [Matter.js](https://brm.io/matter-js/)
+- **Components**: [Shadcn UI](https://ui.shadcn.com/)
 - **Icons**: [Lucide React](https://lucide.dev/)
-- **UI Components**: [Shadcn UI](https://ui.shadcn.com/) / [Radix UI](https://www.radix-ui.com/)
 
-## Getting Started
+## 🚀 Getting Started
 
-Follow these instructions to get the project up and running on your local machine.
+Follow these steps to run the **landing page** locally.
 
 ### Prerequisites
 
-- Node.js (v18 or higher)
-- npm or yarn
+- **Node.js** v18+
+- **npm** or **yarn**
 
 ### Installation
 
-1.  Clone the repository:
+1.  **Clone the repository**
     ```bash
     git clone https://github.com/sourcelocation/distribute.git
     cd distribute/web
     ```
 
-2.  Install dependencies:
+2.  **Install dependencies**
     ```bash
     npm install
     # or
     yarn install
     ```
 
-### Running Locally
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
 
-Start the development server:
+4.  **View the site**
+    Open [http://localhost:3000](http://localhost:3000) to view the landing page.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## 📂 Project Structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
-
-## Project Structure
-
-```bash
+```text
 web/
-├── public/              # Static assets (images, icons)
+├── public/              # Static assets (site images, vinyl textures)
 ├── src/
 │   ├── app/             # Next.js App Router pages
-│   ├── components/      # React components
-│   │   ├── ui/          # Reusable UI components (buttons, badges)
-│   │   └── ...          # Feature-specific components (VinylAnimation, etc.)
+│   ├── components/      # React components (Landing sections, animations)
+│   │   ├── ui/          # Shared UI components
+│   │   └── ...          # Feature-specific components
 │   └── lib/             # Utility functions
 ├── next.config.ts       # Next.js configuration
 ├── tailwind.config.ts   # Tailwind CSS configuration
-└── package.json         # Project dependencies and scripts
+└── package.json         # Project dependencies
 ```
 
-## Community & Support
+## 🤝 Community & Support
 
-- **Discord**: Join our community on [Discord](https://discord.gg/X2sZKXhxJj) for discussions and support.
-- **Documentation**: Read the full documentation at [distribute-docs.sourceloc.net](https://distribute-docs.sourceloc.net/docs).
-- **Updates**: Follow [@sourceloc](https://twitter.com/sourceloc) on Twitter.
+- **💬 Discord**: Join us on [Discord](https://discord.gg/X2sZKXhxJj).
+- **📚 Documentation**: [distribute-docs.sourceloc.net](https://distribute-docs.sourceloc.net/docs).
+- **🐦 Twitter**: Follow [@sourceloc](https://twitter.com/sourceloc).
 
-## License
+## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the **MIT License**. See `LICENSE` for more information.
 
-```text
-MIT License
+---
 
-Copyright (c) 2026 sourcelocation
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+<div align="center">
+  Built with ❤️ by <a href="https://github.com/sourcelocation">sourcelocation</a>
+</div>

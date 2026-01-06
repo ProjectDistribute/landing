@@ -15,7 +15,7 @@ export function FeaturesGrid() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.4 }}
                     transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                    className="group relative md:col-span-2 overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-blue-600/20 to-indigo-900/20 p-10 border border-white/5"
+                    className="group relative md:col-span-2 overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-blue-950 to-black p-10 border border-white/5"
                 >
                     <div className="relative z-10">
                         <div className="mb-4 inline-flex items-center rounded-full bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-400 ring-1 ring-inset ring-blue-500/20">
