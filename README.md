@@ -15,12 +15,20 @@
   </p>
 
   <p>
+    <a href="#-community">Discord</a> •
     <a href="#-about-this-project">About This Project</a> •
     <a href="#-about-distribute-the-product">Distribute App</a> •
     <a href="#-getting-started">Getting Started</a> •
     <a href="#%EF%B8%8F-tech-stack">Tech Stack</a>
   </p>
 </div>
+
+---
+
+## 🤝 Community
+
+- [Discord](https://discord.gg/X2sZKXhxJj).
+- [Twitter @sourceloc](https://twitter.com/sourceloc).
 
 ---
 
@@ -117,12 +125,6 @@ web/
 ├── tailwind.config.ts   # Tailwind CSS configuration
 └── package.json         # Project dependencies
 ```
-
-## 🤝 Community & Support
-
-- **💬 Discord**: Join us on [Discord](https://discord.gg/X2sZKXhxJj).
-- **📚 Documentation**: [distribute-docs.sourceloc.net](https://distribute-docs.sourceloc.net/docs).
-- **🐦 Twitter**: Follow [@sourceloc](https://twitter.com/sourceloc).
 
 ## 📄 License
 
