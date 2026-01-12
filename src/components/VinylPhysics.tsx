@@ -246,6 +246,7 @@ export function VinylPhysics({ titleRef }: VinylPhysicsProps) {
                             alt="Vinyl"
                             width={120}
                             height={120}
+                            quality={90}
                             className="w-full h-full object-contain drop-shadow-2xl"
                             style={{ filter: "brightness(0.7)" }}
                         />

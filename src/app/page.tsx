@@ -55,8 +55,8 @@ export default function Home() {
         className="fixed top-0 z-50 flex w-full items-center justify-between px-6 py-8 md:px-12 backdrop-blur-sm bg-black/20"
       >
         <div className="flex items-center gap-2">
-          <Image src="/app.png" alt="Distribute Logo" width={24} height={24} className="rounded" />
-          <span className="text-xl font-bold tracking-tight uppercase tracking-widest">Distribute</span>
+          <Image src="/app.png" alt="Distribute Logo" width={24} height={24} quality={90} className="rounded" />
+          <span className="text-xl font-bold uppercase tracking-widest text-white/90">Distribute</span>
         </div>
         <div className="flex items-center gap-8">
           <a href="#" className="hidden text-sm font-medium text-zinc-500 transition-colors hover:text-white md:block">Updates</a>
@@ -88,6 +88,7 @@ export default function Home() {
                 alt="Distribute Logo"
                 width={64}
                 height={64}
+                quality={90}
                 className="relative rounded-2xl shadow-2xl border border-white/10"
               />
             </div>
@@ -102,10 +103,10 @@ export default function Home() {
               visible: { transition: { staggerChildren: 0.1 } },
               hidden: {},
             }}
-            className="relative z-10 mb-6 max-w-4xl text-6xl font-bold tracking-tight sm:text-8xl"
-            aria-label="Stop renting your music."
+            className="relative z-10 mb-6 max-w-4xl text-6xl font-bold tracking-tight md:text-7xl lg:text-8xl"
+            aria-label="Your music. Your server. Period."
           >
-            {"Stop renting your music.".split(" ").map((word, i) => (
+            {"Your music. Your server. Period.".split(" ").map((word, i) => (
               <motion.span
                 key={i}
                 variants={{
@@ -123,7 +124,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 1, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="relative z-10 mb-12 max-w-2xl text-lg text-zinc-400 sm:text-xl md:text-2xl leading-relaxed"
+            className="relative z-10 mb-12 max-w-2xl text-lg text-zinc-400 md:text-xl lg:text-2xl leading-relaxed"
           >
             Distribute is an offline-first streaming music app that connects to your home server.
             Cross-sync servers to expand your library.
@@ -135,7 +136,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 1, ease: [0.16, 1, 0.3, 1] }}
             className="relative z-10 flex flex-col items-center gap-6 sm:flex-row"
           >
-            <Button size="lg" className="h-14 rounded-full bg-white px-10 text-base font-bold text-black transition-all hover:bg-zinc-200 hover:scale-105 active:scale-95" asChild>
+            <Button size="lg" className="h-14 rounded-full bg-white px-10 text-base font-semibold text-black transition-all hover:bg-zinc-200 hover:scale-105 active:scale-95" asChild>
               <a href="https://discord.gg/X2sZKXhxJj">Join the Community</a>
             </Button>
             <span className="text-sm font-medium text-zinc-500 flex items-center gap-2">
@@ -188,8 +189,8 @@ function ClosingSection() {
         <Badge variant="outline" className="mb-6 border-zinc-800 bg-black/50 py-1.5 text-zinc-400 backdrop-blur-md">
           Ready to start?
         </Badge>
-        <h2 ref={titleRef} className="mb-8 max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white drop-shadow-2xl">
-          Join the future of music streaming.
+        <h2 ref={titleRef} className="mb-8 max-w-2xl text-4xl font-bold tracking-tight md:text-6xl text-white drop-shadow-2xl">
+          Stop renting your music. Install Distribute.
         </h2>
         <Button
           size="lg"

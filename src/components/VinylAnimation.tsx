@@ -32,6 +32,7 @@ function SpinningDisk() {
                 src="/vinyl-spinning-opt.png"
                 alt="Vinyl"
                 fill
+                quality={90}
                 className="object-contain"
                 priority
                 sizes="(max-width: 768px) 100vw, 600px"

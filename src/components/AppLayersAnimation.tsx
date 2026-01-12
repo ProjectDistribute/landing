@@ -6,16 +6,16 @@ import Image from "next/image";
 
 const SLOGANS = [
     {
-        title: "Lossless audio.",
-        description: "The clearest sound, no compromises."
+        title: "Bit-perfect audio.",
+        description: "Experience sound exactly as the artist intended. Lossless, high-resolution playback with absolute clarity."
     },
     {
         title: "Offline-first.",
-        description: "Blazing fast performance with offline-first streaming. Your music is always ready."
+        description: "Your music is always ready, even when you're not. Blazing fast performance with local-first architecture."
     },
     {
-        title: "Host your hub.",
-        description: "Securely connect to your home server and stream in lossless quality from anywhere."
+        title: "Own your cloud.",
+        description: "Transform your home server into a private streaming powerhouse. Secure, personal, and entirely yours."
     }
 ];
 
@@ -76,7 +76,7 @@ export function AppLayersAnimation() {
 
     return (
         <div ref={containerRef} className="h-[300vh] relative w-full bg-black/50">
-            <div className="sticky top-0 h-screen flex flex-col items-center justify-start overflow-hidden pt-10 md:pt-24">
+            <div className="sticky top-0 h-screen flex flex-col items-center justify-start overflow-hidden pt-20">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.1)_0%,transparent_70%)] pointer-events-none" />
 
                 <motion.div
@@ -163,6 +163,7 @@ export function AppLayersAnimation() {
                                         src={layer.src}
                                         alt={layer.name}
                                         fill
+                                        quality={90}
                                         className="object-contain"
                                         priority
                                     />
